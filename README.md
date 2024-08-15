@@ -1,11 +1,8 @@
-# 2.DevopsProject
-ReactJS CI-CD Vps Deployment by GithubActions 
+# 2.DevopsProject > ReactJS deployment > Automate by GithubActions to VPS server.
+### Deploy ReactJS and VueJS Project using Github on Nginx Remote Server or VPS
 
-
-### How to Point Domain and Deploy ReactJS and VueJS Project using Github on Nginx Remote Server or VPS
 - Get Access to Remote Server via SSH
 ```sh
-Syntax:- ssh -p PORT USERNAME@HOSTIP
 Example:- ssh -p 1034 raj@216.32.44.12
 ```
 - Verify that all required softwares are installed
@@ -34,35 +31,21 @@ sudo ufw status verbose
 ```sh
 exit
 ```
-- Login to Your Domain Provider Website
-- Navigate to Manage DNS
-- Add Following Records:
 
-| Type | Host/Name | Value |
-| :---: | :---: | :--- |
-| A     | @     | Your Remote Server IP |
-| A     | www   | Your Remote Server IP |
-| AAAA  | @     | Your Remote Server IPv6 |
-| AAAA  | www   | Your Remote Server IPv6 |
 
 - Copy Project from Local Machine to Remote Server or VPS. There are two ways to do it:-
   1. Using Command Prompt
-      - On Local Windows Machine Make Your Project Folder a Zip File using any of the software e.g. winzip
-      - Open Command Prompt
-      - Copy Zip File from Local Windows Machine to Linux Remote Server
+       
       ```sh
-      Syntax:- scp -P Remote_Server_Port Source_File_Path Destination_Path
       Example:- scp -P 1034 miniblog.zip raj@216.32.44.12:
       ```
       - Copied Successfully
       - Get Access to Remote Server via SSH
       ```sh
-      Syntax:- ssh -p PORT USERNAME@HOSTIP
       Example:- ssh -p 1034 raj@216.32.44.12
       ```
       - Unzip the Copied Project Zip File
       ```sh
-      Syntax:- unzip zip_file_name
       Example:- unzip miniblog.zip
       ```
       
