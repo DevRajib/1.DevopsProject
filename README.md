@@ -5,32 +5,22 @@
 ```sh
 Example:- ssh -p 1034 raj@216.32.44.12
 ```
-- Verify that all required softwares are installed
+- Verify & Install Software (If required) 
 ```sh
 nginx -v
 node -v
 npm -v
 git --version
-```
-- Install Software (If required)
-```sh
 sudo apt install nginx
 sudo apt install git
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs
-```
-- Verify Nginx is Active and Running
-```sh
 sudo service nginx status
-```
-- Verify Web Server Ports are Open and Allowed through Firewall
-```sh
 sudo ufw status verbose
-```
-- Exit from Remote Server
-```sh
 exit
 ```
+
+
 
 
 - Copy Project from Local Machine to Remote Server or VPS. There are two ways to do it:-
