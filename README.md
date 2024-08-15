@@ -28,16 +28,11 @@ exit
        
       ```sh
       Example:- scp -P 1034 miniblog.zip raj@216.32.44.12:
-      ```
-      - Copied Successfully
-      - Get Access to Remote Server via SSH
-      ```sh
       Example:- ssh -p 1034 raj@216.32.44.12
-      ```
-      - Unzip the Copied Project Zip File
-      ```sh
+      Example:- ssh -p 1034 raj@216.32.44.12
       Example:- unzip miniblog.zip
       ```
+
       
   2. Using Github
       - Open Project on VS Code then add .gitignore file (If needed)
