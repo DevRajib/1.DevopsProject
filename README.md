@@ -20,7 +20,7 @@ sudo ufw status verbose
 exit
 ```
 
-
+``````````````
 
 
 - Copy Project from Local Machine to Remote Server or VPS. There are two ways to do it:-
