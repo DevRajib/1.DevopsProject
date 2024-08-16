@@ -18,9 +18,10 @@ sudo apt-get install -y nodejs
 sudo service nginx status
 sudo ufw status verbose
 exit
+
 ```
 
-``````````````
+hello
 
 
 - Copy Project from Local Machine to Remote Server or VPS. There are two ways to do it:-
