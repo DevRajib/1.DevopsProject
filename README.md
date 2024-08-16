@@ -1,4 +1,7 @@
-# 7.DevopsProject > ReactJS deployment > Automate by GithubActions to VPS server.
+ReactJS deployment > Automate by GithubActions to VPS server.
+
+
+
 ### Deploy ReactJS and VueJS Project using Github on Nginx Remote Server or VPS
 
 - Get Access to Remote Server via SSH
