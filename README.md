@@ -21,20 +21,17 @@ exit
 
 ```
 
-hello
-
-
-- Copy Project from Local Machine to Remote Server or VPS. There are two ways to do it:-
+-There are two ways to do Copy Project from Local Machine to Remote Server or VPS
   1. Using Command Prompt
        
       ```sh
-      Example:- scp -P 1034 miniblog.zip raj@216.32.44.12:
-      Example:- ssh -p 1034 raj@216.32.44.12
-      Example:- ssh -p 1034 raj@216.32.44.12
-      Example:- unzip miniblog.zip
+        scp -P 1034 miniblog.zip raj@216.32.44.12:
+        ssh -p 1034 raj@216.32.44.12
+        ssh -p 1034 raj@216.32.44.12
+        unzip miniblog.zip
+
       ```
 
-      
   2. Using Github
       - Open Project on VS Code then add .gitignore file (If needed)
       - Push your Poject to Your Github Account as Private Repo
@@ -62,9 +59,10 @@ hello
       Example:- git clone git@github.com:geekyshow1/miniblog.git
       ```
 - Move Project Folder to Web Server public directory
+
 ```sh
 Syntax:- sudo mv project_folder_name /var/www
-Example:- sudo mv miniblog /var/www
+
 ```
 - Install Dependencies
 ```sh
@@ -77,7 +75,7 @@ npm run build
 - Create Virtual Host File
 ```sh
 Syntax:- sudo nano /etc/nginx/sites-available/your_domain
-Example:- sudo nano /etc/nginx/sites-available/sonamkumari.com
+
 ```
 - Write following Code in Virtual Host File
 ```sh
@@ -110,7 +108,7 @@ sudo service nginx restart
 - Go to Your Project Directory
 ```sh
 Syntax:- cd /var/www/project_folder_name
-Example:- cd /var/www/miniblog
+
 ```
 - Pull the changes from github repo
 ```sh
@@ -120,6 +118,15 @@ git pull
 ```sh
 npm run build
 ```
+
+
+
+
+
+
+
+
+
 ##
 ### How to Automate ReactJS and VueJS Project Deployment using Github Action
 - On Your Local Machine, Open Your Project using VS Code or any Editor
